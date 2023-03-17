@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80836DB72986492C00805B54 /* watering_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80836DB62986492C00805B54 /* watering_appApp.swift */; };
+		80836DB92986492C00805B54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80836DB82986492C00805B54 /* ContentView.swift */; };
+		80836DBB2986492E00805B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80836DBA2986492E00805B54 /* Assets.xcassets */; };
+		80836DBE2986492E00805B54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80836DBD2986492E00805B54 /* Preview Assets.xcassets */; };
+		80836DC82986492E00805B54 /* watering_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80836DC72986492E00805B54 /* watering_appTests.swift */; };
+		80836DD22986492E00805B54 /* watering_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80836DD12986492E00805B54 /* watering_appUITests.swift */; };
+		80836DD42986492E00805B54 /* watering_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80836DD32986492E00805B54 /* watering_appUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80836DC42986492E00805B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80836DAB2986492C00805B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80836DB22986492C00805B54;
+			remoteInfo = watering_app;
+		};
+		80836DCE2986492E00805B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80836DAB2986492C00805B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80836DB22986492C00805B54;
+			remoteInfo = watering_app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80836DB32986492C00805B54 /* watering_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watering_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80836DB62986492C00805B54 /* watering_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watering_appApp.swift; sourceTree = "<group>"; };
+		80836DB82986492C00805B54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80836DBA2986492E00805B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80836DBD2986492E00805B54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80836DC32986492E00805B54 /* watering_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watering_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80836DC72986492E00805B54 /* watering_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watering_appTests.swift; sourceTree = "<group>"; };
+		80836DCD2986492E00805B54 /* watering_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watering_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80836DD12986492E00805B54 /* watering_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watering_appUITests.swift; sourceTree = "<group>"; };
+		80836DD32986492E00805B54 /* watering_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watering_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80836DB02986492C00805B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80836DC02986492E00805B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80836DCA2986492E00805B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80836DAA2986492C00805B54 = {
+			isa = PBXGroup;
+			children = (
+				80836DB52986492C00805B54 /* watering_app */,
+				80836DC62986492E00805B54 /* watering_appTests */,
+				80836DD02986492E00805B54 /* watering_appUITests */,
+				80836DB42986492C00805B54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80836DB42986492C00805B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80836DB32986492C00805B54 /* watering_app.app */,
+				80836DC32986492E00805B54 /* watering_appTests.xctest */,
+				80836DCD2986492E00805B54 /* watering_appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80836DB52986492C00805B54 /* watering_app */ = {
+			isa = PBXGroup;
+			children = (
+				80836DB62986492C00805B54 /* watering_appApp.swift */,
+				80836DB82986492C00805B54 /* ContentView.swift */,
+				80836DBA2986492E00805B54 /* Assets.xcassets */,
+				80836DBC2986492E00805B54 /* Preview Content */,
+			);
+			path = watering_app;
+			sourceTree = "<group>";
+		};
+		80836DBC2986492E00805B54 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				80836DBD2986492E00805B54 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80836DC62986492E00805B54 /* watering_appTests */ = {
+			isa = PBXGroup;
+			children = (
+				80836DC72986492E00805B54 /* watering_appTests.swift */,
+			);
+			path = watering_appTests;
+			sourceTree = "<group>";
+		};
+		80836DD02986492E00805B54 /* watering_appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80836DD12986492E00805B54 /* watering_appUITests.swift */,
+				80836DD32986492E00805B54 /* watering_appUITestsLaunchTests.swift */,
+			);
+			path = watering_appUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80836DB22986492C00805B54 /* watering_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80836DD72986492E00805B54 /* Build configuration list for PBXNativeTarget "watering_app" */;
+			buildPhases = (
+				80836DAF2986492C00805B54 /* Sources */,
+				80836DB02986492C00805B54 /* Frameworks */,
+				80836DB12986492C00805B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watering_app;
+			productName = watering_app;
+			productReference = 80836DB32986492C00805B54 /* watering_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80836DC22986492E00805B54 /* watering_appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80836DDA2986492E00805B54 /* Build configuration list for PBXNativeTarget "watering_appTests" */;
+			buildPhases = (
+				80836DBF2986492E00805B54 /* Sources */,
+				80836DC02986492E00805B54 /* Frameworks */,
+				80836DC12986492E00805B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80836DC52986492E00805B54 /* PBXTargetDependency */,
+			);
+			name = watering_appTests;
+			productName = watering_appTests;
+			productReference = 80836DC32986492E00805B54 /* watering_appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80836DCC2986492E00805B54 /* watering_appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80836DDD2986492E00805B54 /* Build configuration list for PBXNativeTarget "watering_appUITests" */;
+			buildPhases = (
+				80836DC92986492E00805B54 /* Sources */,
+				80836DCA2986492E00805B54 /* Frameworks */,
+				80836DCB2986492E00805B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80836DCF2986492E00805B54 /* PBXTargetDependency */,
+			);
+			name = watering_appUITests;
+			productName = watering_appUITests;
+			productReference = 80836DCD2986492E00805B54 /* watering_appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80836DAB2986492C00805B54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					80836DB22986492C00805B54 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					80836DC22986492E00805B54 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 80836DB22986492C00805B54;
+					};
+					80836DCC2986492E00805B54 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 80836DB22986492C00805B54;
+					};
+				};
+			};
+			buildConfigurationList = 80836DAE2986492C00805B54 /* Build configuration list for PBXProject "watering_app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80836DAA2986492C00805B54;
+			productRefGroup = 80836DB42986492C00805B54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80836DB22986492C00805B54 /* watering_app */,
+				80836DC22986492E00805B54 /* watering_appTests */,
+				80836DCC2986492E00805B54 /* watering_appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80836DB12986492C00805B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80836DBE2986492E00805B54 /* Preview Assets.xcassets in Resources */,
+				80836DBB2986492E00805B54 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80836DC12986492E00805B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80836DCB2986492E00805B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80836DAF2986492C00805B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80836DB92986492C00805B54 /* ContentView.swift in Sources */,
+				80836DB72986492C00805B54 /* watering_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80836DBF2986492E00805B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80836DC82986492E00805B54 /* watering_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80836DC92986492E00805B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80836DD22986492E00805B54 /* watering_appUITests.swift in Sources */,
+				80836DD42986492E00805B54 /* watering_appUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80836DC52986492E00805B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80836DB22986492C00805B54 /* watering_app */;
+			targetProxy = 80836DC42986492E00805B54 /* PBXContainerItemProxy */;
+		};
+		80836DCF2986492E00805B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80836DB22986492C00805B54 /* watering_app */;
+			targetProxy = 80836DCE2986492E00805B54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		80836DD52986492E00805B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80836DD62986492E00805B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80836DD82986492E00805B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watering_app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "brandon.watering-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80836DD92986492E00805B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watering_app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "brandon.watering-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80836DDB2986492E00805B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "brandon.watering-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watering_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/watering_app";
+			};
+			name = Debug;
+		};
+		80836DDC2986492E00805B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "brandon.watering-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watering_app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/watering_app";
+			};
+			name = Release;
+		};
+		80836DDE2986492E00805B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "brandon.watering-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = watering_app;
+			};
+			name = Debug;
+		};
+		80836DDF2986492E00805B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "brandon.watering-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = watering_app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80836DAE2986492C00805B54 /* Build configuration list for PBXProject "watering_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80836DD52986492E00805B54 /* Debug */,
+				80836DD62986492E00805B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80836DD72986492E00805B54 /* Build configuration list for PBXNativeTarget "watering_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80836DD82986492E00805B54 /* Debug */,
+				80836DD92986492E00805B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80836DDA2986492E00805B54 /* Build configuration list for PBXNativeTarget "watering_appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80836DDB2986492E00805B54 /* Debug */,
+				80836DDC2986492E00805B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80836DDD2986492E00805B54 /* Build configuration list for PBXNativeTarget "watering_appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80836DDE2986492E00805B54 /* Debug */,
+				80836DDF2986492E00805B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80836DAB2986492C00805B54 /* Project object */;
+}
