@@ -5,7 +5,7 @@
 
 const char* ssid = "HOME";
 const char* password = "14639214";
-const char* host = "192.168.0.28";
+const char* host = "";//host ip
 const uint16_t port = 80;
 int relay = 5;
 int led = 2;
