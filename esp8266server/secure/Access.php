@@ -50,10 +50,8 @@ public function registerUser($username, $password, $salt, $email, $fullname){
             echo 'jasonerror';
         }
         // bind 5 parameters of type string to be placed in sql command
-        $debug = $statement->bind_param('sssss', $username, $password, $salt, $email, $fullname);
-        echo $debug;
+        $statement->bind_param('sssss', $username, $password, $salt, $email, $fullname);
         $returnvalue = $statement->execute();
-        echo json_encode($returnvalue);
         return $returnvalue;
 
     }
@@ -71,7 +69,7 @@ public function registerUser($username, $password, $salt, $email, $fullname){
 
             //if row is not empty
             if (!empty($row)) {
-                $returnarray = $row;
+                $returnarray = $row; 
             }
         }
         return $returnarray;
