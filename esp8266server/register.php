@@ -44,7 +44,6 @@ $access->connect();
 //*****************STEP 3 insert user information ******************/
 
 $result = $access->registerUser($username, $secured_password, $salt, $email, $fullname);
-echo 'aqui';
 
 if ($result){
     $user = $access->selectUser($username);
