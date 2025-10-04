@@ -1,5 +1,7 @@
 <?php
 
+use Dom\BrokenRandomEngineError;
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -54,6 +56,32 @@ if ($result){
     $returnArray['email'] = $user['email'];
     $returnArray['fullname'] = $user['fullname'];
     $returnArray['ava'] = $user['ava'];
+
+    // STEP 4 emailing
+    require ("secure/email.php");
+    $email = new email();
+    // store generated token 
+    $token = $email->generatetoken(20);
+    //save in email tokens table
+    $access->saveToken("EmailTokens",$user['id'],$token);
+
+    //refer emailing information
+    $details = array();
+    $details ["subject"] = "Email confirmation for Watering app";
+    $details ["to"] = $user ["email"];
+    $details ["fromName"] = "brandon";
+    $details ["fromEmail"] = "brandon_amm@hotmail.com";
+
+    // access template file
+    $template = $email->confirmationTemplate();
+
+    //replace token from confirmation.html by $token and store in $template
+
+    $template = str_replace("{token}", $token, $template);
+    $details["body"] = $template;
+    $email->sendEmail($details);
+
+
 
 
 } else {

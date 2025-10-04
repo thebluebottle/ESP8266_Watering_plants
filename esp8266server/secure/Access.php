@@ -39,7 +39,8 @@ public function disconnect() {
 // Insert user details
 public function registerUser($username, $password, $salt, $email, $fullname){  
     // sql command
-        $sql = "INSERT INTO users SET username=?, password=?, salt=?, email=?, fullname=?";
+        $sql = "INSERT INTO users SET username=?, password=?, salt=?, email=?, fullname=?, emailConfirmed=?";
+        $defaultConfirm = 0;
 
         //store query result in $statement
         $statement = $this->conn->prepare($sql);
@@ -50,7 +51,7 @@ public function registerUser($username, $password, $salt, $email, $fullname){
             echo 'jasonerror';
         }
         // bind 5 parameters of type string to be placed in sql command
-        $statement->bind_param('sssss', $username, $password, $salt, $email, $fullname);
+        $statement->bind_param('sssssi', $username, $password, $salt, $email, $fullname, $defaultConfirm);
         $returnvalue = $statement->execute();
         return $returnvalue;
 
@@ -74,6 +75,78 @@ public function registerUser($username, $password, $salt, $email, $fullname){
         }
         return $returnarray;
     }
+
+    //save email confirmation token
+    public function saveToken($table,$id,$token){
+        $sql = "INSERT INTO $table SET id=?, token=?";
+
+        $statement = $this->conn->prepare($sql);
+
+        if (!$statement){
+            throw new Exception($statement->error);
+        }
+        $statement->bind_param("is", $id,$token);
+
+        //launch execute
+        $returnvalue = $statement->execute();
+        return $returnvalue;
+
+    }
+
+//get ID of the user 
+function getUserID($table, $token)
+{
+    $returnArray = array();
+    //sql statement
+    $sql = "SELECT id FROM $table WHERE token = $token";
+
+    $result = $this->conn->query($sql);
+
+    if ($result != null && (mysqli_num_rows($result) >= 1)){
+        $row = $result->fetch_array(MYSQLI_ASSOC);
+
+        if(!empty($row)) {
+            $returnArray = $row;
+
+        }
+    }
+    return $returnArray;
+
+}
+
+// change status of email confirmation column
+function emailConfrimationStatus($status, $id){
+    $sql = "UPDATE users SET emailConfirmed=? WHERE id=?";
+    $statement = $this->conn->prepare($sql);
+
+    if (!$statement) {
+        throw new Exception($statement->error);
+    }
+
+    $statement->bind_param("ii", $status, $id);
+
+    $ReturnValue = $statement->execute();
+
+    return $ReturnValue;
+
+
+}
+
+//delete token once email confirmed
+function deleteToken($table, $token){
+    $sql= "DELETE FROM $table WHERE token=?";
+    $statement = $this->conn->prepare($sql);
+    if(!$statement) {
+        throw new Exception($statement->error);
+    }
+
+    $statement->bind_param("s", $token);
+    $returnValue = $statement->execute();
+    
+    return $returnValue;
+
+}
+
 
 
 
