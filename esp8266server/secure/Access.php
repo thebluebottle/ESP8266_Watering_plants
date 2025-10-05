@@ -146,7 +146,21 @@ function deleteToken($table, $token){
     return $returnValue;
 
 }
+// Get user information
+public function getUser($username) {
+    $returnArray = array();
+    $sql = "SELECT * FROM users WHERE username='".$username."'";
+    $result = $this->conn->query($sql);
 
+    if ($result != null && (mysqli_num_rows($result) >= 1)) {
+        $row = $result->fetch_array(MYSQLI_ASSOC);
+
+        if (!empty($row)) {
+            $returnArray = $row;
+        }
+    }
+    return $returnArray;
+}
 
 
 

@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
-        <!--RegistrationVC-->
+        <!--LoginVC-->
         <scene sceneID="f30-e3-yrU">
             <objects>
-                <viewController id="067-kM-l4j" customClass="RegistrationVC" customModule="WateringApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="067-kM-l4j" customClass="LoginVC" customModule="WateringApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oJ-ug-zjM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,14 +111,14 @@
                                 <rect key="frame" x="-63" y="-36" width="519" height="930"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BMB-Md-QST">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BMB-Md-QST" userLabel="usernameTxt">
                                 <rect key="frame" x="52" y="175" width="289" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.73397212460000005" green="0.86858581270000002" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7q-cb-Q2l">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7q-cb-Q2l" userLabel="passwordTxt">
                                 <rect key="frame" x="52" y="230" width="289" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.73397212460000005" green="0.86858581270000002" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
@@ -131,7 +131,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
-                                    <action selector="RegisterClick:" destination="067-kM-l4j" eventType="touchUpInside" id="kCU-pB-aiN"/>
+                                    <action selector="Login_click:" destination="067-kM-l4j" eventType="touchUpInside" id="hhe-Cw-Nui"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WateringApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iL-nj-I9E">
@@ -158,8 +158,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="8V9-xO-FEj"/>
                     <connections>
-                        <outlet property="passwordTxt" destination="g7q-cb-Q2l" id="X5N-WK-puM"/>
-                        <outlet property="usernameTxt" destination="BMB-Md-QST" id="TtC-d6-peg"/>
+                        <outlet property="passwordTxt" destination="g7q-cb-Q2l" id="Bqw-xc-OvS"/>
+                        <outlet property="usernameTxt" destination="BMB-Md-QST" id="71R-0h-MHY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhn-ex-Mn9" sceneMemberID="firstResponder"/>
