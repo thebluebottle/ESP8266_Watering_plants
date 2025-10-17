@@ -26,6 +26,17 @@ class email {
 
         return $template;
     }
+
+    function ResetPasswordTemplate() {
+
+        $file = fopen("templates/ResetPasswordTemplate.html", "r") or die("unable to open file");
+
+        $template = fread($file, filesize("templates/ResetPasswordTemplate.html"));
+
+        fclose($file);
+
+        return $template;
+    }
     //send email with php   
 
     function sendEmail($details){

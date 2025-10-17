@@ -162,6 +162,24 @@ public function getUser($username) {
     return $returnArray;
 }
 
+    //select user info by email
+    public function selectUserbyemail($email){
+        //sql command
+        $sql = "SELECT * FROM users WHERE email='".$email."'";
+        //assign result from $sql to $result var
+        $result = $this->conn->query($sql);
+        //if we have at least one result returned
+        if ($result != null && (mysqli_num_rows($result) >= 1)){
+            //assign results to $row as assosiative array
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+
+            //if row is not empty
+            if (!empty($row)) {
+                $returnarray = $row; 
+            }
+        }
+        return $returnarray;
+    }
 
 
 }
